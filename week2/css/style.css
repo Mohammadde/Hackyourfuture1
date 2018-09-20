@@ -11,6 +11,10 @@ ul {
   list-style-type: none;
 }
 
+.grid-item{
+  padding:10px;
+}
+
 /* Desktop */
 #grid-floats {
   display: grid;
