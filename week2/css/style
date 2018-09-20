@@ -2,4 +2,15 @@
 	background: #red;
 	font-family: open sans;
 
+
 }
+.grid-item{
+height: 200px;
+
+
+}
+#grid-item{
+
+height: 200px;
+}
+
