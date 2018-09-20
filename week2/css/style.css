@@ -136,3 +136,7 @@ ul {
     flex-wrap: wrap;
   }
 }
+p{
+  font-family: open sans;
+  font-size: 20px;
+}
