@@ -1,10 +1,4 @@
 
-.grid-item{
-height: 200px;
-
-
-}
-#grid-item{
 
 
 body {
@@ -15,3 +9,8 @@ body {
     font-weight : 300;
     background  : #ccc;
     }
+.grid-item{
+	height: 200px;
+	height: 200px;
+	font-family: open sans;
+}
