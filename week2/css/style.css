@@ -29,7 +29,7 @@ ul {
 }
 
 #grid-floats > .grid-item:nth-child(2) {
-  background-color: rgb(140, 223, 198);
+  background-color: #39b261;
   grid-column: 3 / 4;
   grid-row: 1 / -1;
 }
