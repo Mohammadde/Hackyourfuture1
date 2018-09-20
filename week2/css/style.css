@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(219, 202, 165);
-  color: azure;
+  background-color: #a0fd0e;
+
 }
 img {
   width: 100px;
@@ -139,4 +139,11 @@ ul {
 p{
   font-family: open sans;
   font-size: 20px;
+
+}
+
+h3{
+  font-family: open sans;
+  font-style: bold;
+  font-size: 30px;
 }
