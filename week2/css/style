@@ -14,3 +14,13 @@ height: 200px;
 height: 200px;
 }
 
+.test{
+	font-style: bold;
+	color: #ccc;
+	font-size: 200px;
+
+}
+#test{
+	font-size: 12px;
+	color: #000;
+}
