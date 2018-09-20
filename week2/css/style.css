@@ -6,19 +6,7 @@ height: 200px;
 }
 #grid-item{
 
-height: 200px;
-}
 
-.test{
-	font-style: bold;
-	color: #ccc;
-	font-size: 200px;
-
-}
-#test{
-	font-size: 90px;
-	color: #000;
-}
 body {
     font-family : 'Hind', sans-serif;
     font-size   : 15px;
