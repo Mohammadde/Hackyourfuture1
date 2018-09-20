@@ -28,6 +28,17 @@ ul {
   text-align: center;
   color: azure;
 }
+hover:#grid-floats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-auto-flow: dense;
+  grid-gap: 0.8em;
+  text-align: center;
+  color: azure;
+  opacity: 0.2;
+}
+
 
 #grid-floats > .grid-item:nth-child(1) {
   background-color: #538bdf;
