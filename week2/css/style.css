@@ -15,7 +15,9 @@ ul {
 .grid-item{
   padding:10px;
 }
-
+#grid-item{
+  padding:10px;
+}
 /* Desktop */
 #grid-floats {
   display: grid;
