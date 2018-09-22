@@ -61,11 +61,11 @@ ul, li {
     grid-column: 1 / 4;
   }
   #grid-floats > .grid-item:nth-child(2) {
-    background-color: rgb(70, 120, 140);
+    background-color: #f93d24;
     grid-column: 4 / 7;
   }
   #grid-floats > .grid-item:nth-child(n + 3) {
-    background-color: rgb(70, 120, 140);
+    background-color: #f93d24;
     grid-column: span 2;
   }
 
@@ -73,11 +73,11 @@ ul, li {
 /*For mobile phones with less than 600 with pixels*/
 @media (max-width: 600px) {
   #grid-floats > .grid-item:nth-child(1) {
-    background-color: rgb(150, 180, 100);
+    background-color: #d42b2b;
     grid-column: 1 / 5;
   }
   #grid-floats > .grid-item:nth-child(n + 2) {
-    background-color: rgb(70, 120, 140);
+    background-color: #f93d24;
     grid-column: span 2;
   }
 }/* Flexbox Editing */
@@ -91,14 +91,14 @@ ul, li {
   padding-left: 0;
 }
 #grid-flex > .grid-item:nth-child(1) {
-  background-color: rgb(150, 60, 100);
+  background-color: #d42b2b);
   flex-wrap: wrap;
   flex-basis: calc(50% - 2px);
   border: 1px solid white;
 }
 
 #grid-flex > .grid-item:nth-child(n + 2) {
-  background-color: rgb(10, 50, 100);
+  background-color: #d42b2b;
   flex-wrap: wrap;
   flex-basis: calc(25% - 2px);
   border: 1px solid white;
@@ -133,12 +133,12 @@ ul, li {
     text-align:center;
   }
   #grid-flex > .grid-item:nth-child(1) {
-    background-color: rgb(150, 60, 100);
+    background-color: #d42b2b;
     flex: calc(100% - 2px);
     border: 1px solid white;
   }
   #grid-flex > .grid-item:nth-child(n + 2) {
-    background-color: rgb(10, 50, 100);
+    background-color: #d42b2b;
     flex: calc(50% - 2px);
     border: 1px solid white;
   }
