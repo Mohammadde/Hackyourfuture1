@@ -138,25 +138,25 @@ function viewBooks(obj) {
 // viewBooks(books);
 
 let booksCover = { 
-    oca_oracle_certified_associate_java_se_8_programme:"./img/img1.jpg",
+    Microsoft Flight Simulator:"./img/img1.jpg",
 
-    the_cplusplus_programming_language_4th_edition:"./img/img2.jpg",
+    Tiltfactor Laboratory:"./img/img2.jpg",
     
-    python_programming_an_introduction_to_computer_science:"./img/img3.jpg",
+    A Force More Powerful:"./img/img3.jpg",
 
-    extreme_programming_pocket_guid:"./img/img4.jpg",
+    Darfur is Dying:"./img/img4.jpg",
 
-    a_smarter_way_to_learn_javaScript:"./img/img5.jpg",
+    PeaceMaker:"./img/img5.jpg",
 
-    full_stack_react_projects:"./img/img6.jpg",
+    World Without Oil:"./img/img6.jpg",
 
-    thinking_in_java:"./img/img7.jpg",
+    IBM City One:"./img/img7.jpg",
 
-    mastering_node_js_second_edition:"./img/img8.jpg",
+    A man called Ove:"./img/img8.jpg",
 
-    mysql_8_Administrators_guide:"./img/img9.jpg",          
+    So far so close:"./img/img9.jpg",          
                 
-    the_road_to_learn_react:"./img/img10.jpg",
+    jungles hamilton briston:"./img/img10.jpg",
 }
 
 //To view book imgage at the appropriate li
