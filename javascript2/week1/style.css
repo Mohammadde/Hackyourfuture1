@@ -1,5 +1,6 @@
 ul {
     list-style-type: none;
+    background: #ccc;
     padding: 0;
   }
 li {
@@ -9,17 +10,17 @@ li {
   }
   
 h1 {
-    font-family: Tahoma, sans-serif;
+    font-family: open sans, sans-serif;
     font-size: 18px;
   }
   
 h2 {
-    font-family: Tahoma, sans-serif;
+    font-family: open sans, sans-serif;
     font-size: 14px;
   }
   
 h3 {
-    font-family: Cambria, Georgia, Times, serif;
+    font-family: opens sans, Georgia, Times, serif;
     font-size: 12px;
   }
   
