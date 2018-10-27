@@ -1,287 +1,176 @@
-'use strict';
-{
+let bookNames = 
+                ["oca_oracle_certified_associate_java_se_8_programme",//Jeanne Boyarsky, Scott Selikoff
+                "the_c++_programming_language,_4th_edition",//Bjarne Stroustrup
+                "python_programming:_an_introduction_to_computer_science",//John Zelle
+                "extreme_programming_pocket_guid",//Ward Cunningham
+                "a_smarter_way_to_learn_javaScript",//Mark Myers
+                "full_stack_react_projects",//Shama Hoque
+                "thinking_in_java",//Bruce Eckel
+                "mastering_node_js_second_edition",//Sandro Pasquali
+                "mysql_8_Administrators_guide",//Chintan Mehta
+                "the_road_to_learn_react",//Robin Wieruch
+                ];
+/** Titles:
+ * OCA Oracle Certified Associate Java SE 8 Programme 
+ * The C++ Programming Language, 4th Edition
+ * Python Programming: An Introduction to Computer Science
+ * Extreme Programming Pocket Guid
+ * A Smarter Way to Learn JavaScript
+ * Full-Stack React Projects:Modern web development using React 16, Node, Express, and MongoDB
+ * Thinking in Java
+ * Mastering Node.js Second Edition
+ * MySQL 8 Administrator's Guide
+ * The road to learn React
+*/
 
-  const bookTitles = [ "harry_potter_chamber_of_secrets" , "the_grace_of_kings" , "game_of_thrones" ,
+// console.log(bookNames);
+// write books id on HTML from an array
+function createUl(arr){
+    let ul = document.createElement('ul');
+    ul.setAttribute('id','booksName');
+    document.body.appendChild(ul)
+    for (let i=0; i<arr.length; i++){
+      let li = document.createElement('li');
+      li.setAttribute('id', i);
+      li.innerHTML = arr[i];
+      ul.appendChild(li);
+    }
+}
 
-                     "children_of_blood_and_bone" , "fire_and_Blood" , "the_sea_and_civilisation" ,
+// createUl(bookNames);
 
-                     "stalins_englishman" , "magna_carta" , "night_walking" , "napoleon_the_great" ];
- 
-  console.log( bookTitles );
+// books object
+let books = {
+    oca_oracle_certified_associate_java_se_8_programme:
+    {
+        title: "OCA Oracle Certified Associate Java SE 8 Programme",
+        language: "english",
+        author: "Jeanne Boyarsky"
+    },
+    the_cplusplus_programming_language_4th_edition:
+    {
+        title: "The C++ Programming Language, 4th Edition",
+        language: "english",
+        author: "Bjarne Stroustrup"
+    },
+    
+    python_programming_an_introduction_to_computer_science:
+    {
+        title: "Python Programming: An Introduction to Computer Science",
+        language: "english",
+        author: "John Zelle"
+    },
+    extreme_programming_pocket_guid:
+    {
+        title: "Extreme Programming Pocket Guid",
+        language: "english",
+        author: "Ward Cunningham"
+    },
 
+    a_smarter_way_to_learn_javaScript:
+    {
+        title: "A Smarter Way to Learn JavaScript",
+        language: "english",
+        author: "Mark Myers"
+    },
 
-  for ( var i = 0 ; i < bookTitles.length ; i++ ) { 
+    full_stack_react_projects:
+    {
+        title: "Full-Stack React Projects:Modern web development using React 16, Node, Express, and MongoDB",
+        language: "english",
+        author: "Shama Hoque"
+    },
 
-    console.log( "book [" + i + "] : " + bookTitles[ i ] + '\n' )
+    thinking_in_java:
+    {
+        title: "Thinking in Java",
+        language: "english",
+        author: "Bruce Eckel"
+    },
 
-    } 
+    mastering_node_js_second_edition:
+    {
+        title: "Mastering Node.js Second Edition",
+        language: "english",
+        author: "Sandro Pasquali"
+    },
+
+    mysql_8_Administrators_guide:
+    {
+        title: "MySQL 8 Administrator's Guide",
+        language: "english",
+        author: "Chintan Mehta"
+    },
+                
+                
+    the_road_to_learn_react:
+    {
+        title: "The road to learn React",
+        language: "english",
+        author: "Robin Wieruch"
+    },
 
 }
 
-
-
-
-
-'use strict'
-
-const bookTitles = [ "harry_potter_chamber_of_secrets" , "the_grace_of_kings" , "game_of_thrones" ,  //Books titles, I will use it as an index in 'bookObject'
-
-                     "children_of_blood_and_bone" , "fire_and_Blood" , "the_sea_and_civilisation" ,
-
-                     "stalins_englishman" , "magna_carta" , "night_walking" , "napoleon_the_great" ];
-
-
-
-
-
-
-
-
-function createFieldsetOfBooksArray(){   //Create a fieldset of Books array 
-
-  'use strict'
-
-
-
-  var fieldset = document.createElement( 'fieldset' );   //Create a fieldset in index.html
-
-  fieldset.setAttribute( 'class' , 'booksArray' );
-
-
-
-  var legend = document.createElement( 'legend' );   //Create a legend for the  fieldset
-
-  legend.innerHTML = 'Book IDs' ;  
-
-  fieldset.appendChild( legend );
-
-
+// write books object on HTML
+function viewBooks(obj) {
+    let booksUl = document.createElement('ul');
+    document.body.appendChild(booksUl)
+      for (let i=0; i<Object.keys(obj).length; i++){
+        let book_li = document.createElement('li');
+        book_li.setAttribute('id', Object.keys(obj)[i]);
+        booksUl.appendChild(book_li);
   
-  let ul = document.createElement( 'ul' );   //Create a ul in the  fieldset
-
-  fieldset.appendChild( ul );
-
-
-
-  for ( var i = 0 ; i < bookTitles.length ; i++ ) {  //set each element of the "bookTitles" into in  "LI" element  of the "UL" elements
-
-
-    var li = document.createElement( 'li' );
-
-    li.innerHTML = bookTitles[ i ];
-
-    ul.append( li );
-
-  }
-
-  document.body.append( fieldset );
-};
-
-
-//2.4-----------------------------------------------------------
-
-const bookObject = {          //An object of books
-
-  "harry_potter_chamber_of_secrets" : {
-
-    'title': 'Harry Potter and the Chamber of Secrets' ,
-
-    'language' : 'English' ,
-
-    'author' : 'Chris Columbus' ,
-
-    'date_of_publication' : 2002
-
-  },
-
-
-  "the_grace_of_kings" : {
-
-    'title': 'The Grace of Kings' ,
-
-    'language' : 'Chinese' ,
-
-    'author' : 'Ken Liu' ,
-
-    'date_of_publication' : 2015
-
-  },
-
-
-  "game_of_thrones" : {
-
-    'title': 'A Game of Thrones ' ,
-
-    'language' : 'English' ,
-
-    'author' : 'George Martin' ,
-
-    'date_of_publication' : 1996
-
-  },
-
-
-  "children_of_blood_and_bone" : {
-
-    'title': 'Children of Blood and Bone' ,
-
-    'language' : 'English' ,
-
-    'author' : 'Tomi Adeyemi' ,
-
-    'date_of_publication' : 2018
-
-  },
-
-
-  "fire_and_Blood" : {
-
-    'title': 'Fire and Blood' ,
-
-    'language' : 'English' ,
-
-    'author' : 'George Martin' ,
-
-    'date_of_publication' : 2018
-
-  },
-
-
-  "the_sea_and_civilisation" : {
-
-    'title': 'The Sea and Civilization: A Maritime History of the World' ,
-
-    'language' : 'English' ,
-
-    'author' : 'Lincoln Paine' ,
-
-    'date_of_publication' : 2013
-
-  },
-
-
-  "stalins_englishman" : {
-
-    'title': "Stalin's Englishman: The Lives of Guy Burgess" ,
-
-    'language' : 'English' ,
-
-    'author' : 'Andrew Lownie' ,
-
-    'date_of_publication' : 2015
-
-  },
-
-
-  "magna_carta" : {
-
-    'title': 'Magna Carta' ,
-
-    'language' : 'English' ,
-
-    'author' : 'John King of England & Stephen Langton' ,
-
-    'date_of_publication' : 1215
-
-  },
-
-
-  "night_walking" : {
-
-    'title': 'Nightwalking: A Nocturnal ' ,
-
-    'language' : 'English' ,
-
-    'author' : 'Matthew Beaumont' ,
-
-    'date_of_publication' : 2015
-
-  },
-
-
-  "napoleon_the_great" : {
-
-    'title': 'Napoleon the Great' ,
-
-    'language' : 'English' ,
-
-    'author' : 'Andrew Roberts' ,
-
-    'date_of_publication' : 2015
-
-  }
-
-
-};
-
-
-
-
-
-//2.5   &   2.7   -----------------------------------------------------------
-
-
-function createFieldsetOfBooksObject() {     //Create a fieldset of Books Object
-
-  'use strict'
-
-
-  var fieldset = document.createElement( 'fieldset' );  //Create a fieldset in index.html
-
-  fieldset.setAttribute( 'class' , 'booksObject' );
-
-
-
-  var legend = document.createElement( 'legend' );    //Create a legend for the  fieldset
-
-  legend.innerHTML = 'All book information';  
-
-  fieldset.appendChild( legend );
-
-
-
-  for ( var i = 0 ; i < bookTitles.length ; i++ ){    //We use the "bookTitles" as an index for passing on each book of the "bookObject"
-
-    var div = document.createElement( 'div' );   //Create a div  in index.html for every book
-    
-
- 
-    var h4 = document.createElement( 'h4' );   //Create a h4  in the div
-
-    h4.innerHTML = 'This is the ID of book number ' +  i  + ' : ' + bookTitles[ i ];
-
-    div.appendChild( h4 );
-
-
-     
-    var bookImage = document.createElement( 'img' );   //Create a img  for the book in the div and give it an attribute
-
-    bookImage.src = 'img/' + bookTitles[ i ] + '.jpg';
-
-    bookImage.setAttribute( 'alt' , bookTitles[ i ] );
-
-    div.append( bookImage );
-    
-
-
-    let ul = document.createElement( 'ul' );  //create a list and put all the details of the book in 
-
-    div.appendChild( ul );
-
-
-    for ( let property in bookObject[ bookTitles [ i ] ] ){
-
-      var li = document.createElement( 'li' );   //Put every  detail of the book in "LI".  - title , language , author , date_of_publication -
+        let title = document.createElement('h1');
+        title.innerHTML = obj[Object.keys(obj)[i]].title;
   
-      li.innerHTML = property + ' : ' + bookObject[ bookTitles [ i ] ] [property] ;
+        let language = document.createElement('h2');
+        language.innerHTML = obj[Object.keys(obj)[i]].language;
   
-      ul.append( li );
-
+        let author = document.createElement('h2');
+        author.innerHTML = obj[Object.keys(obj)[i]].author;
+        book_li.appendChild(title);
+        book_li.appendChild(language);
+        book_li.appendChild(author);
     }
-  
-    fieldset.appendChild( div );  
+}
 
+// viewBooks(books);
+
+let booksCover = { 
+    oca_oracle_certified_associate_java_se_8_programme:"./img/img1.jpg",
+
+    the_cplusplus_programming_language_4th_edition:"./img/img2.jpg",
+    
+    python_programming_an_introduction_to_computer_science:"./img/img3.jpg",
+
+    extreme_programming_pocket_guid:"./img/img4.jpg",
+
+    a_smarter_way_to_learn_javaScript:"./img/img5.jpg",
+
+    full_stack_react_projects:"./img/img6.jpg",
+
+    thinking_in_java:"./img/img7.jpg",
+
+    mastering_node_js_second_edition:"./img/img8.jpg",
+
+    mysql_8_Administrators_guide:"./img/img9.jpg",          
+                
+    the_road_to_learn_react:"./img/img10.jpg",
+}
+
+//To view book imgage at the appropriate li
+function viewImages(obj){
+//   console.log("calling viewImages function ");
+//   console.log(obj);
+  for (let i=0; i<Object.keys(obj).length; i++){
+    let li = document.getElementById(Object.keys(obj)[i]);
+    let img = document.createElement('img');
+    let key = Object.keys(obj)[i];
+    img.setAttribute("src", obj[key]);
+    img.setAttribute("alt", "books cover");
+    li.appendChild(img);
+    }
   }
-
-  document.body.append( fieldset );
-};
+  
+// viewImages(booksCover);
