@@ -138,25 +138,25 @@ function viewBooks(obj) {
 // viewBooks(books);
 
 let booksCover = { 
-    Microsoft Flight Simulator:"./img/img1.jpg",
+    Microsoft_Flight_Simulator:"./img/img1.jpg",
 
-    Tiltfactor Laboratory:"./img/img2.jpg",
+    Tiltfactor_Laboratory:"./img/img2.jpg",
     
-    A Force More Powerful:"./img/img3.jpg",
+    A_Force_More_Powerful:"./img/img3.jpg",
 
-    Darfur is Dying:"./img/img4.jpg",
+    Darfur_is_Dying:"./img/img4.jpg",
 
     PeaceMaker:"./img/img5.jpg",
 
-    World Without Oil:"./img/img6.jpg",
+    World_Without_Oil:"./img/img6.jpg",
 
-    IBM City One:"./img/img7.jpg",
+    IBM_City_One:"./img/img7.jpg",
 
-    A man called Ove:"./img/img8.jpg",
+    A_man_called_Ove:"./img/img8.jpg",
 
-    So far so close:"./img/img9.jpg",          
+    So_far_so_colo:"./img/img9.jpg",          
                 
-    jungles hamilton briston:"./img/img10.jpg",
+    the_road_to_learn_react:"./img/img10.jpg",
 }
 
 //To view book imgage at the appropriate li
