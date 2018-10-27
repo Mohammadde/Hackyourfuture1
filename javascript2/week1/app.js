@@ -138,25 +138,25 @@ function viewBooks(obj) {
 // viewBooks(books);
 
 let booksCover = { 
-    Microsoft_Flight_Simulator:"./img/img1.jpg",
+    Microsoft_Flight_Simulator:"./img/1.jpg",
 
-    Tiltfactor_Laboratory:"./img/img2.jpg",
+    Tiltfactor_Laboratory:"./img/2.jpg",
     
-    A_Force_More_Powerful:"./img/img3.jpg",
+    A_Force_More_Powerful:"./img/3.jpg",
 
-    Darfur_is_Dying:"./img/img4.jpg",
+    Darfur_is_Dying:"./img/4.jpg",
 
-    PeaceMaker:"./img/img5.jpg",
+    PeaceMaker:"./img/5.jpg",
 
-    World_Without_Oil:"./img/img6.jpg",
+    World_Without_Oil:"./img/6.jpg",
 
-    IBM_City_One:"./img/img7.jpg",
+    IBM_City_One:"./img/7.jpg",
 
-    A_man_called_Ove:"./img/img8.jpg",
+    A_man_called_Ove:"./img/8.jpg",
 
-    So_far_so_colo:"./img/img9.jpg",          
+    So_far_so_colo:"./img/9.jpg",          
                 
-    the_road_to_learn_react:"./img/img10.jpg",
+    the_road_to_learn_react:"./img/10.jpg",
 }
 
 //To view book imgage at the appropriate li
