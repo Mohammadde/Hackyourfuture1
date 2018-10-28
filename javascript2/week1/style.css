@@ -3,23 +3,23 @@ ul {
     padding: 0;
   }
 li {
-    background-color: rgb(230, 230, 230);
-    color: rgb(38, 160, 100);
+    background-color: salmon;
+    color: #ccc;
     padding-left: 20px;
   }
   
 h1 {
-    font-family: Tahoma, sans-serif;
+    font-family: open sans, sans-serif;
     font-size: 18px;
   }
   
 h2 {
-    font-family: Tahoma, sans-serif;
+    font-family: open sans, sans-serif;
     font-size: 14px;
   }
   
 h3 {
-    font-family: Cambria, Georgia, Times, serif;
+    font-family: open sans, Georgia, Times, serif;
     font-size: 12px;
   }
   
