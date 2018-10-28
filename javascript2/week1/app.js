@@ -152,11 +152,11 @@ let booksCover = {
 
     thinking_in_java:"./img/7.jpg",
 
-    mastering_node_js_second_edition:"./img/8.png",
+    mastering_node_js_second_edition:"./img/8.jpg",
 
     mysql_8_Administrators_guide:"./img/9.jpg",          
                 
-    the_road_to_learn_react:"./img/10.png",
+    the_road_to_learn_react:"./img/10.jpg",
 }
 
 //To view book imgage at the appropriate li
