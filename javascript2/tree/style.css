@@ -21,6 +21,10 @@ a {
     font-weight: bold;
 
 }
+.header:hower{
+    opacity: 0.5;
+
+}
 
 select{
     background-color: white;
