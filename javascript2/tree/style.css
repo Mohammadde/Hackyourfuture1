@@ -14,10 +14,11 @@ a {
 .header{
     background-color: #ccc;
     padding: 20px;
-    border: 2px solid; 
-    border-color: #ccc;
+    border: 5px solid; 
+    border-color: #58a7cf;
     height: 40px;
     font-size: 30px;
+    font-weight: bold;
 
 }
 
