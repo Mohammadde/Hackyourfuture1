@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HYF Github API</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hack Your Future | Github</a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#000000">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="format-detection" content="telephone=no">
-  <title>HYFJ3W1</title>
-  <link rel="apple-touch-icon" href="./hyf.png">
-  <link rel="shortcut icon" type="image/png" href="./hyf.png" />
-  <title>HYF-GITHUB</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body onload="main()">
-  <div class="root">
-      <div class="header">
-          <label for="repositories">HYF Repositories</label>
-          <select id="repositories">
-              <option selected="Choose Repository">Choose a Repository</option>
-          </select>
-          <div id="loading-icon"></div>
+        <div
+          class="navbar navbar-expand-lg navbar-dark bg-dark"
+          id="navbarColor02"
+        >
+          <ul class="navbar-nav mr-auto">
+            <fieldset>
+              <div class="form-group float-right">
+                <select
+                  name="gitContributors"
+                  class="custom-select "
+                  id="gitContributors"
+                  onchange="getContributors(dropdown.options[dropdown.selectedIndex].text)"
+                >
+                </select>
+              </div>
+            </fieldset>
+          </ul>
+        </div>
+      </nav>
+      <br />
+      <div class="row">
+        <div
+          class="card border-success mb-4"
+          style="max-width: 20rem; max-height: 20em;"
+        >
+          <div class="card-header">Github Repo Information</div>
+          <div class="card-body">
+            <h4 class="card-title" id="card-title">Select Repo</h4>
+            <h6>Description:</h6>
+            <p class="card-text" id="card-description"></p>
+            <h6>Total Forks:</h6>
+            <span class="card-text" id="card-forks"></span>
+            <h6>Last Updated:</h6>
+            <p class="card-text" id="card-updated"></p>
+          </div>
+        </div>
+        <div
+          class="card border-success mb-4" style="width: 30em; margin-left: 1em;">
+        <div class="card-header">Contributors</div>
+        <ul class="list-group" id="list"></ul>
+        </div>
       </div>
-      <div class="body row">
-          <div id="repo_info" class="repo_info">
-
-          </div>
-          <div id="repo_contributors" class="repo_contributors">>
-            <div id="contributorList">           
-            </div>
-          </div>
-          <!-- <div id="contributorList">           
-          </div>
-          <div class="repository-info"></div>
-          <div class="contributors">
-              <ul class="contributors-list"></ul>
-          </div> -->
-      </div>
-  </div>
-  <script src="./index.js"></script>
-</body>
-<!-- <body>
-  <div id="root"></div>
-  <script src="./index.js"></script>
-</body> -->
-
+      
+    </div>
+    <footer align="center">
+      Designed by Farhan Nazir
+    </footer> 
+  </body>
+  <script src="app.js"></script>
 </html>
