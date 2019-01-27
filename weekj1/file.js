@@ -20,7 +20,7 @@ var y = 'mohammad';
 console.log('I think the value of y is: mohammad')
 console.log(y);
 y = 'dehghan';
-console.log('I think the value of y now is: dehghan');
+console.log('I think the value of y now is: dehghann');
 console.log(y);
 
 //5.maximum number
