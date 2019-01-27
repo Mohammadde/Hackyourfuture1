@@ -104,4 +104,4 @@ console.log(array);
 console.log(typeof(7/0));
 console.log((7/0) === (6/0));
 
-////this is added 3:08pm
+////this is added 1 min ago 3:13pm
