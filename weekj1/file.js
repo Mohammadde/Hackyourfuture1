@@ -20,7 +20,7 @@ var y = 'mohammad';
 console.log('I think the value of y is: mohammad')
 console.log(y);
 y = 'dehghan';
-console.log('I think the value of y now is: dehghann');
+console.log('I think the value of y now is: dehghan');
 console.log(y);
 
 //5.maximum number
@@ -103,3 +103,5 @@ var array = ['HackYourFuture', 80 , "FooCafe", 199.95]
 console.log(array);
 console.log(typeof(7/0));
 console.log((7/0) === (6/0));
+
+////this is added 3:08pm
