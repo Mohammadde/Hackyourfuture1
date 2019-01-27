@@ -36,6 +36,7 @@ ul, li {
 #grid-floats > .grid-item:nth-child(2) {
   background-color:  #538bdf;
   grid-column: 3 / 4;
+  font-family: color can be change all time and this is why thne name we called these shits this is very power full to how can I explain hos can I reminders to these empiresl;
 }
 
 #grid-floats > .grid-item:nth-child(3) {
@@ -90,6 +91,7 @@ ul, li {
   text-align:center;
   list-style-type: none;
   padding-left: 0;
+  pad
 }
 #grid-flex > .grid-item:nth-child(1) {
   background-color: #1dd9a6;

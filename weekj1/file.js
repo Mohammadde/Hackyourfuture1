@@ -16,11 +16,11 @@ console.log('I think the value of x is 5 ');
 console.log('the real value is: ' + x);
 
 //4.assign different values to String variable
-var y = 'Farshid';
-console.log('I think the value of y is: Farshid')
+var y = 'mohammad';
+console.log('I think the value of y is: mohammad')
 console.log(y);
-y = 'Farjad';
-console.log('I think the value of y now is: Farjad');
+y = 'dehghan';
+console.log('I think the value of y now is: dehghan');
 console.log(y);
 
 //5.maximum number

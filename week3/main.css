@@ -139,6 +139,7 @@ button{
     text-decoration: none;
     font-style: oblique;
     font-size: 16px;
+    font
 }
 
 h2 {
@@ -190,6 +191,7 @@ p.copyrighti {
     margin-top: -48px;
     position: absolute;
 }
+
 
 .more{
     grid: end;
